@@ -1,0 +1,71 @@
+@tailwind components;
+
+
+@layer components{
+    .headerContainer{
+        @apply flex flex-col  justify-center items-start
+        md:flex-row  pt-20 lg:pt-40 pb-10 lg:h-[80vh] relative
+    }
+
+    .headerWrapper{
+        @apply w-full  text-[#1E1E1E]
+         relative flex items-center
+        flex-col justify-center px-10 
+        md:w-[38%] 
+    }
+
+    .profileImg{
+        box-shadow:-30px -30px 0 #FF8080;
+        @apply w-[200px] lg:w-[50%]
+    }
+
+    .headerContent{
+        @apply  z-10 flex flex-col
+         w-full lg:w-[90%] items-center 
+         lg:items-end gap-3  mt-6 
+         xl:mr-36
+    }
+
+    .headerContent .name{
+        @apply  font-bold font-poppins 
+        text-[2rem] md:text-[2.5rem] xl:text-[4rem]
+        xl:w-full
+    }
+
+    .headerContent .detail{
+        @apply text-justify text-base
+         font-normal font-jost 
+         md:text-end md:text-[16px]
+         lg:text-lg
+    }
+
+    .backgroundCard{
+        @apply absolute w-[300px] md:w-[500px]
+    }
+
+
+    .jobTitle{
+        @apply flex items-center gap-3 xl:w-full xl:-mr-32
+    
+    }
+
+    .jobTitle h3{
+        @apply font-poppins uppercase  font-normal
+        tracking-widest text-base md:text-[1.2rem]
+    }
+
+    .circle{
+        @apply bg-[#FF8080] w-[10px] h-[10px]
+        rounded-full
+    }
+
+    .line-r{
+        @apply absolute -bottom-10 right-0 
+        lg:bottom-10 
+         lg:w-[300px]  
+    }
+
+   
+
+    
+}

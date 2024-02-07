@@ -1,0 +1,37 @@
+@tailwind components;
+
+@layer components {
+    .active_link{
+        @apply  border-b-4 border-red-400
+    } 
+
+    .navbar{
+        @apply sticky top-0 z-[1000]  bg-white
+    }
+
+    .navbarWrapper{
+        @apply flex justify-around p-10
+    }
+
+    .navbarLogo{
+        @apply font-bold font-bebas_neue text-[1.5rem]
+    }
+
+    .navbarLinkWrapper{
+        @apply md:flex md:space-x-10 hidden text-sm font-semibold
+    }
+
+
+    .buttonMenu{
+        @apply text-[#131313] text-xl
+    }
+
+
+    .navbarMenu{
+        @apply flex  space-x-5 md:hidden
+    }
+
+    .navbarMobileLink{
+        @apply flex flex-col items-center  p-10 gap-5 bg-white shadow lg:hidden
+    }
+}

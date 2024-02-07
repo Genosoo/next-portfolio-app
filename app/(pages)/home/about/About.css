@@ -1,0 +1,43 @@
+@tailwind components;
+
+
+@layer components{
+   
+
+    .aboutContainer{
+        @apply flex flex-col items-center justify-center py-20 lg:h-[80vh]
+        relative
+    }
+
+
+    .aboutWrapper{
+        @apply flex flex-col items-end md:w-[70%] lg:w-[80%] xl:w-[60%] pt-20 
+        gap-5
+    }
+
+
+    .aboutTitle{
+        @apply flex items-center gap-4 pr-10
+    }
+
+    .aboutTitle h2{
+        @apply font-poppins font-bold text-[1.5rem]
+        md:text-[2rem] lg:text-[3rem] uppercase
+    }
+
+    .aboutCircle{
+        @apply bg-[#FF8080] w-[10px] h-[10px]
+        rounded-full
+    }
+
+    .aboutDetail{
+        @apply text-sm font-jost font-normal px-10 text-justify
+        md:text-base lg:text-lg md:text-end md:pl-20 lg:w-[80%]
+    }
+
+    .line-l{
+        @apply absolute -bottom-10 left-0 lg:bottom-10 
+         lg:w-[300px]  
+    }
+   
+}

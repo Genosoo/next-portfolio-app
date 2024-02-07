@@ -1,0 +1,57 @@
+
+@tailwind components;
+
+
+@layer components{
+    .projectContainer{
+        @apply flex flex-col items-center justify-center  
+        relative py-20
+    }
+
+    .projectWrapper{
+        @apply flex flex-col items-start  md:w-[80%] 
+        gap-5 lg:pb-20 lg:w-[80%] xl:w-[60%]
+    }
+
+
+    .projectTitleBox{
+        @apply flex flex-col 
+    }
+
+    .projectTitle{
+        @apply flex items-center gap-4  pl-10
+    }
+
+    .projectDetail{
+        @apply text-sm font-jost font-normal px-10 text-justify
+        md:text-base lg:text-lg md:text-start  lg:w-[60%]
+    }
+
+    .projectTitle h2{
+        @apply font-poppins font-bold text-[1.5rem]
+        md:text-[2rem] lg:text-[3rem] uppercase
+    }
+
+    .projectCircle{
+        @apply bg-[#FF8080] w-[10px] h-[10px]
+        rounded-full
+    }
+
+ 
+    .projectCardWrapper{
+        @apply md:mt-20 flex
+         gap-10  items-center justify-center lg:pl-20
+    }
+
+    .projectCard{
+        box-shadow:-30px 30px 0 #F6F6F6;
+        @apply  w-[250px] h-[250px]  
+         bg-gray-300 duration-300
+    }
+
+    .projectCard:hover{
+        box-shadow:-30px 30px 0 #FF8080;
+    }
+
+    
+}
